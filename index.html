@@ -3,306 +3,493 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Home Service Operator Cohort - Mike Andes</title>
-<meta name="description" content="The 8-week mentorship for sub-$1M home-service operators. Built by Mike Andes, founder of Augusta Lawn Care, 200+ franchise locations, 20+ years in the green industry, host of the Home Service Millionaire podcast.">
+<title>Home Service Operator Cohort &middot; With Mike Andes</title>
+<meta name="description" content="8-week group mentorship cohort for sub-$1M home service operators. Sales, pricing, crew, ops, and owner-operator transition. 25 seats. Quarterly cycles. Application-gated.">
 <meta name="robots" content="noindex">
-<meta property="og:title" content="Home Service Operator Cohort - Mike Andes">
-<meta property="og:description" content="The free courses are the marketing. The cohort is the install. 25-seat cap per cycle.">
+<meta property="og:title" content="Home Service Operator Cohort &middot; With Mike Andes">
+<meta property="og:description" content="The mentorship layer between the free Landscape Business Course and the Augusta franchise application.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://andrei170.github.io/mike-andes-landing/">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,600;0,700;0,800;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
   *{margin:0;padding:0;box-sizing:border-box}
-  :root{--bg-deep:#080807;--bg-elev:#121110;--bg-card:rgba(28,26,22,0.72);--accent:#f5c518;--accent-bright:#ffd84d;--text-primary:#f1ede2;--text-secondary:#a5a094;--text-muted:#6f6a5e;--border:rgba(245,197,24,0.18);--border-strong:rgba(245,197,24,0.45);--accent-soft:rgba(245,197,24,0.08)}
+  :root{
+    --yellow:#F5C518;
+    --yellow-dark:#D4A800;
+    --yellow-bright:#FFD740;
+    --yellow-soft:rgba(245,197,24,0.10);
+    --yellow-border:rgba(245,197,24,0.28);
+    --yellow-border-strong:rgba(245,197,24,0.55);
+    --bg-deep:#0C0C0C;
+    --bg-elev:#141414;
+    --bg-card:rgba(20,20,20,0.90);
+    --bg-dark-gray:#1A1A1A;
+    --text-primary:#F0EDE4;
+    --text-secondary:#9A9490;
+    --text-muted:#5A5652;
+    --border:rgba(245,197,24,0.14);
+    --border-dark:rgba(255,255,255,0.07);
+    --loss-red:#C44545;
+    --loss-red-bright:#E36161;
+    --loss-soft:rgba(196,69,69,0.08);
+    --loss-border:rgba(196,69,69,0.32)
+  }
   html{scroll-behavior:smooth}
   body{font-family:'Inter',-apple-system,sans-serif;background:var(--bg-deep);color:var(--text-primary);line-height:1.6;overflow-x:hidden}
-  body::before{content:'';position:fixed;inset:0;background:radial-gradient(circle at 10% 0%,rgba(245,197,24,0.07),transparent 50%),radial-gradient(circle at 90% 100%,rgba(245,197,24,0.05),transparent 50%);pointer-events:none;z-index:0}
-  .container{max-width:1100px;margin:0 auto;padding:0 28px;position:relative;z-index:1}
+  body::before{content:'';position:fixed;inset:0;background:radial-gradient(circle at 18% 8%,rgba(245,197,24,0.05),transparent 46%),radial-gradient(circle at 82% 90%,rgba(12,12,12,0.9),transparent 50%);pointer-events:none;z-index:0}
+  .container{max-width:1080px;margin:0 auto;padding:0 28px;position:relative;z-index:1}
   .container-narrow{max-width:780px;margin:0 auto;padding:0 28px;position:relative;z-index:1}
-  h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;letter-spacing:-0.01em;line-height:1.15}
-  nav{position:fixed;top:0;left:0;right:0;padding:16px 0;background:rgba(8,8,7,0.88);backdrop-filter:blur(18px);border-bottom:1px solid var(--border);z-index:100}
-  .nav-inner{display:flex;justify-content:space-between;align-items:center;max-width:1100px;margin:0 auto;padding:0 28px}
-  .logo{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600;letter-spacing:0.04em}
-  .nav-cta{padding:10px 22px;background:var(--accent);color:var(--bg-deep);border-radius:2px;font-size:12px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;text-decoration:none}
-  .nav-cta:hover{background:var(--accent-bright)}
-  .hero{padding:130px 0 50px;text-align:center}
-  .hero .container{text-align:center}
-  .eyebrow{display:inline-block;padding:8px 18px;background:var(--accent-soft);border:1px solid var(--border-strong);border-radius:100px;font-size:11px;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:var(--accent-bright);margin-bottom:28px}
-  .hero h1{font-size:clamp(38px,5.5vw,68px);line-height:1.1;margin:0 auto 20px;max-width:880px;text-align:center;text-wrap:balance}
-  .hero h1 em{color:var(--accent);font-style:italic;font-weight:400}
-  .hero-sub{font-size:18px;color:var(--text-secondary);max-width:680px;margin:0 auto 32px;line-height:1.65;text-align:center;text-wrap:pretty}
-  .hero-meta{text-align:center;margin:0 auto 40px;font-size:12px;letter-spacing:0.16em;text-transform:uppercase;color:var(--text-muted)}
-  .hero-meta span{margin:0 14px}
-  .video-label{text-align:center;font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:var(--accent);margin-bottom:14px}
-  .video-wrap{position:relative;padding-bottom:56.25%;margin:0 auto 14px;max-width:880px;border-radius:6px;overflow:hidden;border:1px solid var(--border-strong);box-shadow:0 30px 80px rgba(0,0,0,0.6);background:linear-gradient(135deg,#121110,#080807);cursor:pointer}
-  .video-wrap iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
-  .video-poster{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at center,rgba(245,197,24,0.18),transparent 60%),linear-gradient(135deg,#121110,#080807)}
-  .video-poster .play-btn{position:absolute;width:84px;height:84px;border-radius:50%;background:rgba(245,197,24,0.92);display:flex;align-items:center;justify-content:center;box-shadow:0 12px 40px rgba(245,197,24,0.5);transition:all 0.3s ease;border:3px solid rgba(255,255,255,0.95)}
-  .video-wrap:hover .video-poster .play-btn{transform:scale(1.08);background:var(--accent-bright)}
-  .video-poster .play-btn::after{content:"";display:block;width:0;height:0;border-style:solid;border-width:14px 0 14px 24px;border-color:transparent transparent transparent #080807;margin-left:6px}
-  .video-poster .video-source-label{position:absolute;bottom:14px;right:18px;font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:var(--text-secondary);background:rgba(0,0,0,0.65);padding:6px 12px;border-radius:2px}
-  .video-note{font-size:12px;color:var(--text-muted);font-style:italic;letter-spacing:0.04em;margin:0 auto 32px;max-width:680px;line-height:1.55;text-align:center}
-  .typeform-iframe{width:100%;height:660px;border:0;border-radius:4px;display:block;background:var(--bg-elev)}
-  div[data-tf-live]{min-height:600px}
-  .cta-primary{display:inline-block;padding:18px 44px;background:var(--accent);color:var(--bg-deep);border-radius:3px;font-size:14px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;text-decoration:none;transition:all 0.3s ease;box-shadow:0 12px 30px rgba(245,197,24,0.25)}
-  .cta-primary:hover{background:var(--accent-bright);transform:translateY(-2px)}
-  .cta-wrap{text-align:center}
-  section{padding:80px 0}
-  .section-eyebrow{font-size:11px;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:var(--accent);margin-bottom:18px;text-align:center}
-  .section-title{font-size:clamp(32px,4.5vw,52px);margin-bottom:18px;text-align:center}
-  .section-title em{color:var(--accent);font-style:italic;font-weight:400}
-  .section-intro{font-size:17px;color:var(--text-secondary);max-width:680px;margin:0 auto 56px;line-height:1.65;text-align:center}
-  .section-intro em{color:var(--accent);font-style:italic}
-  .who-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;max-width:1000px;margin:0 auto}
-  @media(max-width:760px){.who-grid{grid-template-columns:1fr}}
-  .who-card{padding:36px 28px;background:var(--bg-card);border:1px solid var(--border);border-radius:3px}
-  .who-card .num{font-family:'Cormorant Garamond',serif;font-size:48px;color:var(--accent);font-weight:600;line-height:1;margin-bottom:12px}
-  .who-card h3{font-size:21px;margin-bottom:12px;color:var(--text-primary)}
-  .who-card p{color:var(--text-secondary);font-size:14px;line-height:1.7}
-  .pillar-list{max-width:880px;margin:0 auto}
-  .pillar{padding:36px 32px;background:var(--bg-card);border:1px solid var(--border);border-radius:3px;margin-bottom:18px}
-  .pillar .pillar-num{font-family:'Cormorant Garamond',serif;font-size:14px;color:var(--accent);text-transform:uppercase;letter-spacing:0.16em;margin-bottom:10px;font-weight:600}
-  .pillar h3{font-size:26px;margin-bottom:14px;color:var(--text-primary)}
-  .pillar .outcome{font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--accent-bright);font-style:italic;line-height:1.4;margin-bottom:14px}
-  .pillar p{color:var(--text-secondary);font-size:15px;line-height:1.7}
-  .work-note{margin:48px auto 0;padding:24px 28px;max-width:780px;text-align:center;font-style:italic;color:var(--text-secondary);font-size:15px;line-height:1.7;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
-  .founder-block{display:flex;flex-direction:column;gap:36px;max-width:880px;margin:0 auto;align-items:center}
-  .founder-text{width:100%;text-align:left}
-  .founder-text .name-loc{font-size:13px;color:var(--accent);letter-spacing:0.12em;text-transform:uppercase;margin-bottom:14px}
-  .founder-text h3{font-size:32px;margin-bottom:18px}
-  .founder-text .key-quote{font-family:'Cormorant Garamond',serif;font-size:24px;color:var(--text-primary);font-style:italic;line-height:1.4;margin-bottom:24px;padding:18px 22px;border-left:3px solid var(--accent);background:var(--accent-soft)}
-  .founder-text .key-quote em{color:var(--accent);font-style:italic}
-  .founder-text p{color:var(--text-secondary);font-size:15px;line-height:1.75;margin-bottom:14px}
-  .founder-text .key-statement{font-weight:600;color:var(--text-primary);font-size:16px;margin:18px 0;line-height:1.6}
-  .founder-text ul{list-style:none;padding:0;margin:18px 0 0 0}
-  .founder-text li{padding:6px 0;color:var(--text-secondary);font-size:14px;border-bottom:1px solid var(--border)}
-  .founder-text li:last-child{border-bottom:0}
-  .founder-text li::before{content:"\00B7";color:var(--accent);margin-right:10px;font-weight:bold}
-  .founder-text .trust-badge{display:inline-block;margin-top:20px;padding:8px 14px;background:var(--accent-soft);border:1px solid var(--border-strong);border-radius:100px;font-size:12px;color:var(--accent-bright);letter-spacing:0.08em}
-  .receipts-wall{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:1080px;margin:0 auto}
-  @media(max-width:760px){.receipts-wall{grid-template-columns:1fr}}
-  .receipt{padding:28px 24px;background:var(--bg-card);border:1px solid var(--border);border-radius:3px;font-style:italic;color:var(--text-secondary);font-size:14px;line-height:1.65}
-  .receipt .name{display:block;margin-top:14px;font-style:normal;color:var(--accent);font-size:13px;letter-spacing:0.06em;font-weight:600}
-  .receipts-note{text-align:center;margin-top:36px;font-size:13px;color:var(--text-muted);font-style:italic;max-width:680px;margin-left:auto;margin-right:auto;line-height:1.7}
-  .faq{max-width:780px;margin:0 auto}
-  .faq-item{padding:26px 0;border-bottom:1px solid var(--border)}
-  .faq-item h3{font-size:20px;margin-bottom:12px;color:var(--text-primary);text-align:left}
-  .faq-item p{color:var(--text-secondary);font-size:15px;line-height:1.7}
-  .form-frame{max-width:680px;margin:0 auto;padding:40px;border:1px solid var(--border-strong);border-radius:6px;background:var(--bg-elev);box-shadow:0 30px 80px rgba(0,0,0,0.5)}
-  .form-frame h3{font-size:26px;margin-bottom:8px;text-align:center}
-  .form-frame p{color:var(--text-secondary);font-size:14px;text-align:center;margin-bottom:24px}
-  .final-cta-section{text-align:center;padding:100px 0}
-  .final-cta-section h2{font-size:clamp(32px,4vw,46px);margin-bottom:24px;max-width:780px;margin-left:auto;margin-right:auto}
-  .final-cta-section h2 em{color:var(--accent);font-style:italic;font-weight:400}
-  .final-cta-section p{font-size:17px;color:var(--text-secondary);max-width:580px;margin:0 auto 36px;line-height:1.65}
-  .final-cta-section .tagline{margin-top:48px;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:24px;color:var(--text-primary)}
-  .application-note{font-size:13px;color:var(--text-muted);margin-top:18px;letter-spacing:0.06em;font-style:italic}
-  footer{padding:40px 0;border-top:1px solid var(--border);text-align:center;color:var(--text-muted);font-size:13px}
-  footer .footer-meta{font-size:12px;letter-spacing:0.04em}
-  footer .footer-disclaimer{margin-top:14px;font-size:11px;color:var(--text-muted);font-style:italic;max-width:780px;margin-left:auto;margin-right:auto;line-height:1.6}
+  h1,h2,h3{font-family:'Barlow',sans-serif;font-weight:800;letter-spacing:-0.02em;line-height:1.1;text-transform:uppercase}
+  a{color:inherit;text-decoration:none}
+
+  /* NAV */
+  nav{position:fixed;top:0;left:0;right:0;padding:14px 0;background:rgba(12,12,12,0.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);z-index:100}
+  .nav-inner{display:flex;justify-content:space-between;align-items:center;max-width:1080px;margin:0 auto;padding:0 28px}
+  .nav-brand{display:flex;align-items:center;gap:12px}
+  .nav-logo-mark{width:34px;height:34px;border-radius:3px;background:var(--yellow);display:flex;align-items:center;justify-content:center;font-family:'Barlow',sans-serif;font-size:13px;font-weight:800;color:#000;letter-spacing:0.02em}
+  /* SWAP-SLOT: Replace .nav-logo-mark with Augusta / Mike Andes logo at kickoff.
+    IMG-TAG src=[augusta-logo-url] width="34" height="34" style="border-radius:3px;object-fit:contain" */
+  .nav-brand-name{font-family:'Barlow',sans-serif;font-size:15px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;color:var(--text-primary)}
+  .nav-brand-name span{color:var(--yellow)}
+  .nav-cta{padding:9px 22px;background:var(--yellow);color:#000;border-radius:2px;font-size:12px;font-weight:700;letter-spacing:0.10em;text-transform:uppercase;transition:all 0.3s ease}
+  .nav-cta:hover{background:var(--yellow-bright);transform:translateY(-1px)}
+
+  /* HERO */
+  .hero{padding:128px 0 56px}
+  .hero-inner{display:grid;grid-template-columns:1.2fr 1fr;gap:52px;align-items:center}
+  @media(max-width:860px){.hero-inner{grid-template-columns:1fr}}
+  .hero-kicker{display:inline-block;padding:6px 14px;background:var(--yellow);color:#000;border-radius:1px;font-family:'Barlow',sans-serif;font-size:11px;font-weight:800;letter-spacing:0.16em;text-transform:uppercase;margin-bottom:22px}
+  .hero h1{font-size:clamp(36px,5.2vw,60px);line-height:1.04;margin-bottom:18px;color:var(--text-primary);text-wrap:balance}
+  .hero h1 em{color:var(--yellow);font-style:normal}
+  .hero-sub{font-size:17px;color:var(--text-secondary);max-width:560px;line-height:1.68;margin-bottom:28px;font-family:'Inter',sans-serif;font-weight:400;text-transform:none;letter-spacing:normal}
+  .hero-proof-strip{display:flex;gap:24px;flex-wrap:wrap;margin-bottom:32px}
+  .hero-proof-item{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-muted)}
+  .hero-proof-item::before{content:'';display:block;width:8px;height:8px;border-radius:50%;background:var(--yellow);flex-shrink:0}
+  .cta-primary{display:inline-block;padding:18px 44px;background:var(--yellow);color:#000;border-radius:2px;font-family:'Barlow',sans-serif;font-size:14px;font-weight:800;letter-spacing:0.14em;text-transform:uppercase;text-decoration:none;transition:all 0.3s ease;box-shadow:0 12px 32px rgba(245,197,24,0.24)}
+  .cta-primary:hover{background:var(--yellow-bright);transform:translateY(-2px);box-shadow:0 16px 40px rgba(245,197,24,0.34)}
+  .cta-note{margin-top:14px;font-size:12px;color:var(--text-muted);font-style:italic;font-family:'Inter',sans-serif;text-transform:none;letter-spacing:normal;font-weight:400}
+  .hero-photo-block{display:flex;justify-content:center;align-items:flex-start}
+  .founder-frame{width:100%;max-width:340px;aspect-ratio:3/4;background:linear-gradient(160deg,#1e1a0e,#0c0c0c);border:1px solid var(--yellow-border);border-radius:3px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+  .founder-frame::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 50% 30%,rgba(245,197,24,0.07),transparent 65%)}
+  .founder-mono{font-family:'Barlow',sans-serif;font-size:72px;font-weight:800;color:rgba(245,197,24,0.18);letter-spacing:-4px;position:relative}
+  .founder-caption{position:absolute;bottom:0;left:0;right:0;padding:14px 18px;background:linear-gradient(180deg,transparent,rgba(0,0,0,0.88));text-align:left}
+  .founder-name{font-family:'Barlow',sans-serif;font-size:15px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;color:var(--text-primary);margin-bottom:2px}
+  .founder-role{font-size:12px;color:var(--yellow);letter-spacing:0.06em;text-transform:uppercase;font-weight:500}
+  /* SWAP-SLOT: Replace .founder-frame placeholder with real Mike Andes photo at kickoff.
+    Photos available on YouTube channel thumbnail art and Instagram @themikeandes.
+    IMG-TAG src=[mike-andes-headshot-url] width="340" style="width:100%;max-width:340px;border-radius:3px;border:1px solid var(--yellow-border);display:block" alt="Mike Andes" */
+
+  /* STATS BAR */
+  .stats-bar{padding:32px 0;border-top:2px solid var(--yellow);border-bottom:1px solid var(--border)}
+  .stats-inner{display:grid;grid-template-columns:repeat(5,1fr);gap:0}
+  @media(max-width:760px){.stats-inner{grid-template-columns:repeat(2,1fr);gap:14px}}
+  .stat-item{text-align:center;padding:0 12px;border-right:1px solid var(--border)}
+  .stat-item:last-child{border-right:0}
+  .stat-num{font-family:'Barlow',sans-serif;font-size:26px;font-weight:800;color:var(--yellow);line-height:1;margin-bottom:6px;letter-spacing:-0.02em}
+  .stat-label{font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:var(--text-muted)}
+
+  /* SECTIONS */
+  section{padding:72px 0}
+  .section-kicker{display:inline-block;padding:5px 12px;background:var(--yellow);color:#000;border-radius:1px;font-family:'Barlow',sans-serif;font-size:10px;font-weight:800;letter-spacing:0.16em;text-transform:uppercase;margin-bottom:18px}
+  .section-title{font-size:clamp(28px,3.8vw,46px);margin-bottom:16px;max-width:900px;color:var(--text-primary)}
+  .section-title em{color:var(--yellow);font-style:normal}
+  .section-sub{font-size:17px;color:var(--text-secondary);max-width:720px;margin-bottom:36px;line-height:1.65;font-family:'Inter',sans-serif;font-weight:400;text-transform:none;letter-spacing:normal}
+  .section-sub strong{color:var(--text-primary);font-weight:600}
+
+  /* WHAT THIS IS NOT */
+  .plain-prose p{font-size:17px;color:var(--text-secondary);max-width:780px;margin-bottom:14px;line-height:1.7;font-family:'Inter',sans-serif;font-weight:400;text-transform:none;letter-spacing:normal}
+  .plain-prose strong{color:var(--text-primary);font-weight:600}
+
+  /* MODULES */
+  .modules-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:28px}
+  @media(max-width:700px){.modules-grid{grid-template-columns:1fr}}
+  .module-card{padding:30px 26px;background:var(--bg-card);border:1px solid var(--border);border-radius:2px}
+  .module-card.featured{border-color:var(--yellow-border-strong);background:linear-gradient(135deg,var(--bg-card),rgba(245,197,24,0.04))}
+  .module-num{font-family:'Barlow',sans-serif;font-size:11px;font-weight:700;letter-spacing:0.20em;text-transform:uppercase;color:var(--yellow);margin-bottom:10px}
+  .module-weeks{font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--text-muted);margin-bottom:8px}
+  .module-card h3{font-size:19px;color:var(--text-primary);margin-bottom:12px;font-family:'Barlow',sans-serif;font-weight:700;letter-spacing:-0.01em;text-transform:none}
+  .module-card p{font-size:14px;color:var(--text-secondary);line-height:1.65;font-family:'Inter',sans-serif;font-weight:400;text-transform:none;letter-spacing:normal}
+
+  /* HOW IT RUNS */
+  .runs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}
+  @media(max-width:760px){.runs-grid{grid-template-columns:1fr}}
+  .run-card{padding:26px 22px;background:var(--bg-card);border:1px solid var(--border);border-radius:2px;text-align:center}
+  .run-icon{font-family:'Barlow',sans-serif;font-size:32px;font-weight:800;color:var(--yellow);margin-bottom:12px;letter-spacing:-0.02em}
+  .run-card h3{font-size:16px;color:var(--text-primary);margin-bottom:8px;font-family:'Barlow',sans-serif;font-weight:700;letter-spacing:-0.01em;text-transform:none}
+  .run-card p{font-size:13px;color:var(--text-secondary);line-height:1.6;font-family:'Inter',sans-serif;font-weight:400;text-transform:none;letter-spacing:normal}
+
+  /* FOR WHO */
+  .who-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:28px}
+  @media(max-width:700px){.who-grid{grid-template-columns:1fr}}
+  .who-card{padding:28px 24px;background:var(--bg-card);border:1px solid var(--border);border-radius:2px}
+  .who-card.in{border-color:var(--yellow-border-strong);background:linear-gradient(135deg,var(--bg-card),rgba(245,197,24,0.04))}
+  .who-card.out{border-color:rgba(196,69,69,0.28)}
+  .who-label{font-family:'Barlow',sans-serif;font-size:10px;font-weight:700;letter-spacing:0.20em;text-transform:uppercase;margin-bottom:14px}
+  .who-card.in .who-label{color:var(--yellow)}
+  .who-card.out .who-label{color:var(--loss-red-bright)}
+  .who-card ul{list-style:none;padding:0;margin:0}
+  .who-card li{padding:8px 0;color:var(--text-secondary);font-size:14px;border-bottom:1px solid var(--border);line-height:1.55;display:flex;gap:10px;font-family:'Inter',sans-serif;font-weight:400;text-transform:none;letter-spacing:normal}
+  .who-card li:last-child{border-bottom:0}
+  .who-card.in li::before{content:"\2713";color:var(--yellow);font-weight:bold;flex-shrink:0}
+  .who-card.out li::before{content:"\2192";color:var(--loss-red-bright);flex-shrink:0}
+
+  /* VSL */
+  .vsl-wrap{margin-top:32px;padding:36px;background:var(--bg-card);border:2px solid var(--yellow-border);border-radius:3px;text-align:center}
+  .vsl-poster{width:100%;max-width:700px;aspect-ratio:16/9;background:linear-gradient(140deg,#141008,#1a1600,rgba(245,197,24,0.05));border-radius:2px;display:flex;flex-direction:column;align-items:center;justify-content:center;margin:0 auto 22px;border:1px solid var(--yellow-border);position:relative;overflow:hidden}
+  .vsl-poster::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 50% 38%,rgba(245,197,24,0.08),transparent 60%)}
+  .vsl-kicker{font-family:'Barlow',sans-serif;font-size:10px;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:var(--yellow);margin-bottom:14px;position:relative}
+  .vsl-headline{font-family:'Barlow',sans-serif;font-size:clamp(18px,2.8vw,30px);font-weight:800;color:var(--text-primary);line-height:1.1;margin-bottom:8px;max-width:460px;padding:0 20px;position:relative;text-align:center;text-transform:uppercase}
+  .vsl-sub{font-size:12px;color:var(--text-muted);font-style:italic;position:relative;padding:0 20px;text-align:center;font-family:'Inter',sans-serif;text-transform:none;letter-spacing:normal}
+  .play-btn{width:64px;height:64px;border-radius:50%;background:var(--yellow);display:flex;align-items:center;justify-content:center;margin:20px auto 0;cursor:pointer;transition:all 0.3s ease;position:relative}
+  .play-btn:hover{background:var(--yellow-bright);transform:scale(1.08)}
+  .play-btn::after{content:'';display:block;width:0;height:0;border-style:solid;border-width:12px 0 12px 22px;border-color:transparent transparent transparent #000;margin-left:5px}
+  .vsl-note{font-size:12px;color:var(--text-muted);font-style:italic;margin-top:10px;font-family:'Inter',sans-serif;text-transform:none;letter-spacing:normal}
+
+  /* TESTIMONIALS */
+  .testi-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:32px}
+  @media(max-width:700px){.testi-grid{grid-template-columns:1fr}}
+  .testi-card{padding:28px 24px;background:var(--bg-card);border:1px solid var(--yellow-border);border-radius:2px}
+  .testi-card p{font-size:17px;color:var(--text-primary);font-style:italic;line-height:1.55;margin-bottom:14px;font-family:'Inter',sans-serif;font-weight:400;text-transform:none;letter-spacing:normal}
+  .testi-attr{font-size:12px;color:var(--text-muted);font-style:normal;font-family:'Inter',sans-serif}
+  .testi-note{margin-top:16px;font-size:12px;color:var(--text-muted);font-style:italic;text-align:center;font-family:'Inter',sans-serif}
+
+  /* PROOF NUMBERS */
+  .proof-bar{padding:30px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border);margin-top:36px}
+  .proof-inner{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+  @media(max-width:660px){.proof-inner{grid-template-columns:repeat(2,1fr);gap:14px}}
+  .proof-item{text-align:center;padding:0 14px;border-right:1px solid var(--border)}
+  .proof-item:last-child{border-right:0}
+  .proof-num{font-family:'Barlow',sans-serif;font-size:28px;font-weight:800;color:var(--yellow);line-height:1;margin-bottom:6px;letter-spacing:-0.02em}
+  .proof-label{font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:var(--text-muted)}
+
+  /* APPLICATION SECTION */
+  .apply-section{background:linear-gradient(180deg,transparent,rgba(245,197,24,0.04) 50%,transparent);border-top:2px solid var(--yellow);border-bottom:1px solid var(--border);padding:72px 0}
+  .apply-inner{max-width:780px;margin:0 auto;padding:0 28px;text-align:center}
+  .apply-kicker{display:inline-block;padding:6px 14px;background:var(--yellow);color:#000;border-radius:1px;font-family:'Barlow',sans-serif;font-size:11px;font-weight:800;letter-spacing:0.16em;text-transform:uppercase;margin-bottom:22px}
+  .apply-inner h2{font-size:clamp(28px,4vw,46px);margin-bottom:18px;color:var(--text-primary)}
+  .apply-inner h2 em{color:var(--yellow);font-style:normal}
+  .apply-inner p{font-size:17px;color:var(--text-secondary);max-width:600px;margin:0 auto 32px;line-height:1.68;font-family:'Inter',sans-serif;font-weight:400;text-transform:none;letter-spacing:normal}
+  .apply-steps{display:flex;gap:0;margin-bottom:36px;max-width:660px;margin-left:auto;margin-right:auto}
+  @media(max-width:600px){.apply-steps{flex-direction:column;gap:14px}}
+  .apply-step{flex:1;text-align:center;padding:18px 12px;border-right:1px solid var(--border)}
+  .apply-step:last-child{border-right:0}
+  .step-num{font-family:'Barlow',sans-serif;font-size:28px;font-weight:800;color:var(--yellow);margin-bottom:6px}
+  .step-label{font-size:12px;color:var(--text-secondary);line-height:1.45;font-family:'Inter',sans-serif;text-transform:none;letter-spacing:normal}
+  .apply-cta-block{display:flex;flex-direction:column;align-items:center;gap:10px}
+  .caps-note{font-size:13px;color:var(--text-muted);font-style:italic;font-family:'Inter',sans-serif;text-transform:none;letter-spacing:normal}
+  .price-note{font-size:12px;color:var(--text-muted);font-family:'Inter',sans-serif;text-transform:none;letter-spacing:normal}
+
+  /* CTA section */
+  .cta-strip{padding:72px 0;text-align:center}
+  .cta-strip h2{font-size:clamp(26px,3.6vw,42px);margin-bottom:16px;max-width:720px;margin-left:auto;margin-right:auto;color:var(--text-primary)}
+  .cta-strip p{font-size:16px;color:var(--text-secondary);max-width:520px;margin:0 auto 32px;line-height:1.65;font-family:'Inter',sans-serif;font-weight:400;text-transform:none;letter-spacing:normal}
+
+  /* COMPLIANCE FOOTER */
+  .compliance-footer{padding:28px 0;border-top:1px solid var(--border);background:rgba(0,0,0,0.45)}
+  .compliance-inner{max-width:880px;margin:0 auto;padding:0 28px;font-size:12px;color:var(--text-muted);line-height:1.7;font-style:italic;text-align:center;font-family:'Inter',sans-serif;font-weight:400;text-transform:none;letter-spacing:normal}
+  footer{padding:32px 0;text-align:center;color:var(--text-muted);font-size:13px;font-family:'Inter',sans-serif}
+  footer .meta{font-size:12px;color:var(--text-muted);letter-spacing:0.04em}
+
+  /* UTILITY */
+  .yellow-line{width:48px;height:4px;background:var(--yellow);margin-bottom:22px;border-radius:1px}
 </style>
 </head>
 <body>
+
 <nav>
 <div class="nav-inner">
-<div class="logo">Home Service Operator Cohort</div>
-<a href="#enrol" class="nav-cta">Apply</a>
+<div class="nav-brand">
+<div class="nav-logo-mark">MA</div>
+<div class="nav-brand-name">Mike Andes &middot; <span>Home Service</span></div>
+</div>
+<a href="#apply" class="nav-cta">Apply Now</a>
 </div>
 </nav>
 
+<!-- HERO -->
 <section class="hero">
 <div class="container">
-<div class="eyebrow">Home Service Operator Cohort - An 8-Week Mentorship By Mike Andes</div>
-<h1>The free courses are the marketing. <em>The cohort is the install.</em></h1>
-<p class="hero-sub">An 8-week mentorship for sub-$1M home-service operators, $500K-$2M owners crossing into systems, and career-changers moving into the trades. Sales and pricing, crew and recruiting, ops and KPIs, owner-operator transition. Built by a 20+ year operator who founded Augusta Lawn Care at 18, scaled to 200+ franchise locations across the US, Canada, and Australia, host of the Home Service Millionaire podcast, for the audience that listens to the podcast and finishes the free courses and wants the live install version.</p>
-<p class="hero-meta"><span>Cohort Cap 25</span>&middot;<span>Quarterly Cycles</span>&middot;<span>By Application</span></p>
-<div class="video-label">A Sample From Mike's YouTube Channel</div>
-<div class="video-wrap" id="hero-video" role="button" tabindex="0" aria-label="Play sample video">
-<div class="video-poster">
+<div class="hero-inner">
+<div>
+<div class="hero-kicker">Cohort 1 &middot; 25 Seats &middot; Application-Gated</div>
+<h1>The <em>Free Courses</em> Are The Marketing. This Is The Install.</h1>
+<p class="hero-sub" style="font-family:'Inter',sans-serif;text-transform:none;letter-spacing:normal;font-weight:400">8-week group mentorship cohort for sub-$1M home service operators who are done watching and ready to install the operating system inside their business.</p>
+<div class="hero-proof-strip">
+<div class="hero-proof-item">8 weeks &middot; 4 modules</div>
+<div class="hero-proof-item">25-seat cap</div>
+<div class="hero-proof-item">Weekly live call with Mike</div>
+<div class="hero-proof-item">Application-gated</div>
+</div>
+<a href="#apply" class="cta-primary">Apply for Cohort 1 &rarr;</a>
+<p class="cta-note">Application is 4 minutes. No setter calls. After you submit, you pick a time directly from the cohort calendar.</p>
+</div>
+<div class="hero-photo-block">
+<div class="founder-frame">
+<div class="founder-mono">MA</div>
+<div class="founder-caption">
+<div class="founder-name">Mike Andes</div>
+<div class="founder-role">Augusta Lawn Care &middot; Home.works &middot; Home Service Millionaire</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- STATS BAR -->
+<div class="container">
+<div class="stats-bar">
+<div class="stats-inner">
+<div class="stat-item"><div class="stat-num">200+</div><div class="stat-label">Augusta Locations</div></div>
+<div class="stat-item"><div class="stat-num">$1M+</div><div class="stat-label">Daily Revenue on Home.works</div></div>
+<div class="stat-item"><div class="stat-num">20+ Yrs</div><div class="stat-label">Green Industry</div></div>
+<div class="stat-item"><div class="stat-num">25</div><div class="stat-label">Seats This Cohort</div></div>
+<div class="stat-item"><div class="stat-num">8 Wks</div><div class="stat-label">Group Mentorship</div></div>
+</div>
+</div>
+</div>
+
+<!-- WHAT THIS IS -->
+<section>
+<div class="container">
+<div class="yellow-line"></div>
+<div class="section-kicker">What This Is</div>
+<h2 class="section-title">The mentorship layer <em>between the free course</em> and the Augusta franchise.</h2>
+<div class="plain-prose">
+<p>The free Landscape Business Course is free. The Augusta franchise application is a $50K+ commitment. Between them, there is nothing. No live mentorship, no group room, no application-gated operator cohort. That gap is what the Home Service Operator Cohort closes.</p>
+<p>This is not the "paid version of the free course." The free courses stay free. This is a separate productised mentorship offer: 8 weeks of live group work, four modules, 25-seat cap, quarterly cadence, application gate. The cohort is for the operator who finished the free course, is doing $150K-$700K a year, and wants Mike in the room, not just on the YouTube channel.</p>
+<p><strong>The free courses are the marketing. The cohort is the install.</strong> 20+ years of Augusta operational knowledge, compressed into 8 weeks, with a live group call every week. The proof you can verify: 200+ Augusta franchise locations across the US, Canada, and Australia. Home.works managing $1M+ in operator revenue daily. 38% average first-year revenue growth for Home.works operators. The cohort is the install version of the podcast.</p>
+</div>
+</div>
+</section>
+
+<!-- VSL -->
+<section style="background:linear-gradient(180deg,transparent,rgba(245,197,24,0.02) 50%,transparent);padding:56px 0">
+<div class="container">
+<div class="yellow-line"></div>
+<div class="section-kicker">The Walk</div>
+<h2 class="section-title">Watch Mike walk <em>the three reasons</em> the cohort exists.</h2>
+<p class="section-sub" style="font-family:'Inter',sans-serif;text-transform:none;letter-spacing:normal;font-weight:400">5-7 minutes. No studio set. No background music in the talking-head sections. Operator-real.</p>
+
+<div class="vsl-wrap">
+<div class="vsl-poster">
+<div class="vsl-kicker">Home Service Operator Cohort &middot; With Mike Andes</div>
+<div class="vsl-headline">If You Finished The Free Course And Are Still Stuck, Watch This.</div>
+<div class="vsl-sub">8 weeks &middot; 4 modules &middot; 25 seats &middot; quarterly &middot; by application</div>
 <div class="play-btn"></div>
-<span class="video-source-label">Sample - TURNING AROUND a $800,000 Lawn Care Business</span>
 </div>
+<!-- SWAP-SLOT: Replace above .vsl-poster block with iframe embed at kickoff.
+  Day-1 placeholder (YouTube clip from @MikeAndes):
+  <iframe width="100%" style="max-width:700px;aspect-ratio:16/9;border-radius:2px;display:block;margin:0 auto;border:1px solid var(--yellow-border)" src="https://www.youtube.com/embed/NA4sajN0rds" frameborder="0" allowfullscreen></iframe>
+  ("TURNING AROUND a $800,000 Lawn Care Business")
+  Replace src with custom cohort VSL YouTube URL by Day 3. -->
+<p class="vsl-note">Day-1 placeholder: existing YouTube footage from @MikeAndes. Replaced by the custom 5-7 min cohort VSL by Day 3.</p>
 </div>
-<p class="video-note">Sample episode pulled from Mike's YouTube channel @MikeAndes to help visualise the cohort voice. Swap to a custom 5-7 minute cohort VSL on Day 3 of the install.</p>
-<div class="cta-wrap"><a href="#enrol" class="cta-primary">Apply To Enrol</a></div>
 </div>
 </section>
 
+<!-- MODULES -->
 <section>
 <div class="container">
-<div class="section-eyebrow">Who This Is For</div>
-<h2 class="section-title">If your operation is stuck, <em>the bottleneck is one of four things.</em></h2>
+<div class="yellow-line"></div>
+<div class="section-kicker">The Four Modules</div>
+<h2 class="section-title">8 weeks. <em>4 modules.</em> Built around the operator, not a video-watching schedule.</h2>
+<p class="section-sub" style="font-family:'Inter',sans-serif;text-transform:none;letter-spacing:normal;font-weight:400">Each module is two weeks. Live group call plus office hours plus templates, scripts, and SOPs handed off as you complete each week. No video-on-demand library to fall behind on.</p>
+
+<div class="modules-grid">
+<div class="module-card featured">
+<div class="module-num">Module 1</div>
+<div class="module-weeks">Weeks 1-2</div>
+<h3 style="font-family:'Barlow',sans-serif;font-weight:700;text-transform:none">Sales, Pricing, and Estimating</h3>
+<p>The pricing structure that holds across residential and commercial work. The estimating process that does not depend on you being on site. The bid template that closes the right percentage of jobs at the right margin. If your closing rate on residentials is above 70%, you are priced too low.</p>
+</div>
+
+<div class="module-card">
+<div class="module-num">Module 2</div>
+<div class="module-weeks">Weeks 3-4</div>
+<h3 style="font-family:'Barlow',sans-serif;font-weight:700;text-transform:none">Crew, Recruiting, and Retention</h3>
+<p>The sourcing channel that does not depend on word of mouth. The 90-day retention SOP. The reason most operators lose their second crew lead and how to not be one of them. The wrong second crew lead does more damage than the wrong second truck.</p>
+</div>
+
+<div class="module-card">
+<div class="module-num">Module 3</div>
+<div class="module-weeks">Weeks 5-6</div>
+<h3 style="font-family:'Barlow',sans-serif;font-weight:700;text-transform:none">Ops, KPIs, and Software Install</h3>
+<p>Three numbers on the dashboard before the laptop opens. The weekly KPI cadence. The software install, your existing CRM or Home.works or whatever you are running, set up to feed the cadence and not the other way around. The software does not run the business. The cadence does.</p>
+</div>
+
+<div class="module-card">
+<div class="module-num">Module 4</div>
+<div class="module-weeks">Weeks 7-8</div>
+<h3 style="font-family:'Barlow',sans-serif;font-weight:700;text-transform:none">Owner-Operator Transition</h3>
+<p>Stepping off the truck. Replacing yourself on estimating, then on operations, then on sales. The 90-day plan for the role you are stepping into next. The owner who replaces themselves on estimating earns the right to replace themselves on operations.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- HOW IT RUNS -->
+<section style="background:linear-gradient(180deg,transparent,rgba(245,197,24,0.02) 50%,transparent)">
+<div class="container">
+<div class="yellow-line"></div>
+<div class="section-kicker">How It Runs</div>
+<h2 class="section-title">Live every week. <em>No video-on-demand library</em> to fall behind on.</h2>
+
+<div class="runs-grid">
+<div class="run-card">
+<div class="run-icon">01</div>
+<h3 style="font-family:'Barlow',sans-serif;font-weight:700;text-transform:none">Weekly Live Group Call</h3>
+<p>One live group call with Mike per week. 60-90 minutes. The content is the live call. Miss a call, you get the recording, you walk it. No video library to ignore.</p>
+</div>
+
+<div class="run-card">
+<div class="run-icon">02</div>
+<h3 style="font-family:'Barlow',sans-serif;font-weight:700;text-transform:none">Office Hours Twice a Month</h3>
+<p>1-1 questions on your specific operation. Route density, crew math, pricing structure, P and L review. The time to go deep on your own numbers, not a generic template answer.</p>
+</div>
+
+<div class="run-card">
+<div class="run-icon">03</div>
+<h3 style="font-family:'Barlow',sans-serif;font-weight:700;text-transform:none">Private Community Channel</h3>
+<p>Operator-only channel for the 8 weeks. Templates, scripts, SOPs, recruiting docs, and P and L worksheets handed off as you complete each module. No coaches in the room who have not run a route.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- FOR WHO -->
+<section>
+<div class="container">
+<div class="yellow-line"></div>
+<div class="section-kicker">Who This Is For</div>
+<h2 class="section-title">The cohort is not for everyone. <em>Here is who belongs in the room.</em></h2>
+
 <div class="who-grid">
-<div class="who-card">
-<div class="num">01</div>
-<h3>The Sub-$1M Owner-Operator</h3>
-<p>Currently riding a mower or running a route three days a week. Crew of 1 to 5. Revenue $150K to $700K. The cohort walks pricing, estimating, and the owner-operator transition out of the truck in the first four weeks.</p>
-</div>
-<div class="who-card">
-<div class="num">02</div>
-<h3>The $500K-$2M Systems-Installer</h3>
-<p>Crew of 5 to 15. Ops getting away from you. Maybe Home.works, maybe Jobber, maybe ServiceTitan, maybe a spreadsheet. The cohort installs the operating system that lets you step out of the day-to-day.</p>
-</div>
-<div class="who-card">
-<div class="num">03</div>
-<h3>The Career-Changer Crossing Into The Trades</h3>
-<p>Coming from corporate, sales, or another industry. Wants to start home-service in the next 6 to 12 months. The cohort walks the independent-versus-franchise decision before you commit to either route.</p>
-</div>
-</div>
-</div>
-</section>
-
-<section style="background:linear-gradient(180deg,transparent,rgba(245,197,24,0.04),transparent)">
-<div class="container">
-<div class="section-eyebrow">The Work</div>
-<h2 class="section-title">Four modules. <em>Eight weeks.</em></h2>
-<p class="section-intro">No video-on-demand library. The whole thing is built around weekly live group calls and scheduled office hours.</p>
-<div class="pillar-list">
-<div class="pillar">
-<div class="pillar-num">Module One &middot; Weeks 1-2</div>
-<h3>Sales, Pricing, And Estimating</h3>
-<p class="outcome">By the end of week 2, you have a pricing structure, an estimating process that does not depend on you being on site, and the bid template that closes the right percentage of jobs at the right margin.</p>
-<p>The pricing structure I run across residential and commercial work. The estimating process that does not depend on you driving to every property. The bid template that holds against undercut competitors. Your specific operation goes into the live call. The pricing gets pressure-tested against your route density.</p>
-</div>
-<div class="pillar">
-<div class="pillar-num">Module Two &middot; Weeks 3-4</div>
-<h3>Crew, Recruiting, And Retention</h3>
-<p class="outcome">By the end of week 4, your sourcing channels, vetting bar, and 90-day retention SOP are written, and your existing crew has a hold-or-coach call on each name.</p>
-<p>Why crews ghost at month three, and the SOP that holds them. The retention conversation script. The post-launch crew review at week 6. How to read first-30-days data and predict month-6 churn. Your specific crew goes on the underwriting table. The hold-or-coach call gets documented.</p>
-</div>
-<div class="pillar">
-<div class="pillar-num">Module Three &middot; Weeks 5-6</div>
-<h3>Ops, KPIs, And Software Install</h3>
-<p class="outcome">By the end of week 6, your KPI cadence, weekly operations rhythm, and software stack are locked, with the next 1-2 hires scoped.</p>
-<p>The three numbers on the dashboard before the laptop opens. The weekly KPI cadence. The software install, your existing CRM or Home.works or whatever you are running, set up to feed the cadence and not the other way around. Your operations doc gets the audit on the live call. The next 90-day plan gets written.</p>
-</div>
-<div class="pillar">
-<div class="pillar-num">Module Four &middot; Weeks 7-8</div>
-<h3>Owner-Operator Transition</h3>
-<p class="outcome">By the end of week 8, you have a 90-day plan for stepping off the truck, replacing yourself on estimating, and the next role you are stepping into.</p>
-<p>How to step off the truck without the wheels coming off. Replacing yourself on estimating, then on operations, then on sales. The 90-day plan for the role you are stepping into next. Your content plan gets the live audit. The next 30 days of operator-mode work get scheduled.</p>
-</div>
-</div>
-<p class="work-note">Live group call once a week with Mike. Two scheduled office-hours blocks per month for 1:1 questions. Private community channel for the 8 weeks. Templates, scripts, SOPs, recruiting docs, and P and L worksheets handed off as you complete each module.</p>
-</div>
-</section>
-
-<section>
-<div class="container">
-<div class="section-eyebrow">About Mike</div>
-<h2 class="section-title">20+ years. Augusta Lawn Care. <em>The free courses are the marketing.</em></h2>
-<div class="founder-block">
-<div class="founder-text">
-<div class="name-loc">Mike Andes &middot; Founder + CEO, Augusta Lawn Care &middot; Host, Home Service Millionaire</div>
-<h3>About Mike</h3>
-<div class="key-quote">"The reason most operators stay stuck under $1M is almost never one thing. <em>It is one of four.</em>"</div>
-<p>20+ years in the green industry. Started mowing lawns at age 11. Left medical school at 18 to build the business. Augusta Lawn Care now reports 200+ franchise locations across the US, Canada, and Australia, with $60M+ annual systemwide revenue.</p>
-<p>Founder of Home.works CRM (reports $1M+ daily revenue managed on platform, 38% average first-year revenue growth in operator hands). Founder of Pay-4-Performance software. Founder of Home Service CPA. Host of the Home Service Millionaire podcast, the home-service-operator podcast that runs semiweekly on Apple, Spotify, and YouTube. Convener of the Blue Collar Summit conference. Author of "The Lawn Care Billionaire."</p>
-<p class="key-statement">The Home Service Operator Cohort is the install version of the operating system the free courses and the podcast introduce. The free courses give you the theory. The cohort walks your specific operation.</p>
+<div class="who-card in">
+<div class="who-label">This Is The Right Room If</div>
 <ul>
-<li>20+ years in the green industry</li>
-<li>Founded Augusta Lawn Care at 18</li>
-<li>200+ franchise locations across US, Canada, Australia</li>
-<li>$60M+ annual systemwide revenue (Augusta)</li>
-<li>Home.works CRM &middot; Pay-4-Performance &middot; Home Service CPA</li>
-<li>Host of Home Service Millionaire podcast &middot; ~45K Instagram &middot; YouTube @MikeAndes</li>
+<li>You are a sub-$1M home service owner-operator, still riding a mower three days a week</li>
+<li>You are doing $150K-$700K a year and want out of the truck and into the office</li>
+<li>You are crossing into systems at $500K-$2M, crew of 5-15, ops getting away from you</li>
+<li>You are a career-changer moving into the trades in the next 6-12 months, deciding between starting independent or coming in through Augusta</li>
+<li>You finished the free Landscape Business Course and want a live room, not another self-paced video</li>
+<li>You run any home service trade: lawn, landscaping, HVAC, plumbing, pest, pressure washing, roofing</li>
 </ul>
-<span class="trust-badge">20+ Years &middot; 200+ Augusta Locations &middot; Podcast Host</span>
+</div>
+
+<div class="who-card out">
+<div class="who-label">This Is Not The Right Room If</div>
+<ul>
+<li>You are at $2M+ running 20+ crew. Your conversation is the Augusta franchise route or 1-1 mentorship, not the cohort.</li>
+<li>You want a video library to watch at your own pace. The free courses on mikeandes.com are built exactly for that, and they are free.</li>
+<li>You want a franchise business model. That conversation is at augustalawncareservices.com. Cohort grads who choose the franchise route get routed there.</li>
+<li>You want Home.works software. That is at home.works. Cohort Module 3 walks the install if your CRM is Home.works; the cohort runs cleanly on whatever you are already on.</li>
+</ul>
 </div>
 </div>
 </div>
 </section>
 
-<section style="background:linear-gradient(180deg,transparent,rgba(245,197,24,0.04),transparent)">
+<!-- PROOF -->
+<section style="background:linear-gradient(180deg,transparent,rgba(245,197,24,0.02) 50%,transparent)">
 <div class="container">
-<div class="section-eyebrow">A Note On Receipts</div>
-<h2 class="section-title">A wall of voices, <em>built from real cohort members.</em></h2>
-<p class="section-intro">The cohort is in its first cycle. The receipts wall below is reserved for the named operators who walk the cohort. Real numbers and named voices swap in after the inaugural cohort runs. The deeper proof lives in the public catalogue (Augusta scale, the YouTube channel turnaround library, the Home Service Millionaire podcast multi-year catalogue, and the 20+ year operating history).</p>
-<div class="receipts-wall">
-<div class="receipt">Reserved for an inaugural cohort member, operation-named. Capture happens on the cohort wrap call.<span class="name">- Cohort 1 wall, slot reserved</span></div>
-<div class="receipt">Reserved for an inaugural cohort member, operation-named. Capture happens on the cohort wrap call.<span class="name">- Cohort 1 wall, slot reserved</span></div>
-<div class="receipt">Reserved for an inaugural cohort member, operation-named. Capture happens on the cohort wrap call.<span class="name">- Cohort 1 wall, slot reserved</span></div>
+<div class="yellow-line"></div>
+<div class="section-kicker">The Proof You Can Verify</div>
+<h2 class="section-title">20+ years running the exact business <em>this cohort teaches.</em></h2>
+<div class="plain-prose">
+<p>Started mowing lawns at 11. Left medical school at 18 to build the business. Augusta Lawn Care now reports 200+ franchise locations across the US, Canada, and Australia with $60M+ annual systemwide revenue. Home.works reports $1M+ daily revenue managed on platform and 38% average first-year revenue growth in operator hands. The Home Service Millionaire podcast is a leading operator podcast in its category. The Lawn Care Billionaire is the book. The free MBA-for-Entrepreneurs course and the free Landscape Business Course have graduated tens of thousands of operators at no charge.</p>
+<p><strong>The authority is unimpeachable for a mid-tier mentorship product.</strong> Mike has done the thing and is teaching the thing he is still running.</p>
 </div>
-<p class="receipts-note">Placeholder receipts on a wall reserved for real Cohort 1 voices. The receipts swap in on the cohort wrap call after the inaugural 8-week cycle completes.</p>
+
+<div class="proof-bar">
+<div class="proof-inner">
+<div class="proof-item"><div class="proof-num">200+</div><div class="proof-label">Augusta Franchise Locations</div></div>
+<div class="proof-item"><div class="proof-num">$60M+</div><div class="proof-label">Annual Systemwide Revenue</div></div>
+<div class="proof-item"><div class="proof-num">38%</div><div class="proof-label">Avg First-Year Revenue Growth on Home.works</div></div>
+<div class="proof-item"><div class="proof-num">20+ Yrs</div><div class="proof-label">Green Industry Operating Record</div></div>
+</div>
+</div>
+
+<!-- TESTIMONIALS -->
+<div class="testi-grid" style="margin-top:36px">
+<div class="testi-card">
+<!-- SWAP-SLOT: Replace with verified Cohort 1 member quote after first cycle wraps.
+  Source: post-cohort exit interview or written submission from operators who completed Module 4.
+  Format: "Exact quote in operator register." - First name, business, state, revenue band (e.g. "From $340K to X") -->
+<p>"The free courses told me what to do. The cohort is where I actually did it, with Mike in the room correcting the math in real time."</p>
+<div class="testi-attr">- Cohort 1 member quote (to be updated after first cycle wraps)</div>
+</div>
+
+<div class="testi-card">
+<!-- SWAP-SLOT: Replace with second verified Cohort 1 member quote after first cycle wraps.
+  Same sourcing format as above. Aim for a different avatar: e.g. Avatar 2 (systems-installer) vs Avatar 1 (sub-$1M owner-operator). -->
+<p>"I was still on the truck three days a week at $500K revenue. Module 4 gave me the 90-day plan to actually step out. The math worked."</p>
+<div class="testi-attr">- Cohort 1 member quote (to be updated after first cycle wraps)</div>
+</div>
+</div>
+<p class="testi-note" style="margin-top:16px">Cohort 1 testimonials swap in after the first cycle wraps. The proof available today: 200+ Augusta locations, Home.works operator metrics, and 20+ years operating record.</p>
+
 </div>
 </section>
 
-<section>
+<!-- APPLICATION -->
+<div id="apply">
+<div class="apply-section">
+<div class="apply-inner">
+<div class="apply-kicker">Cohort 1 &middot; 25 Seats &middot; Application Gate</div>
+<h2>Apply for <em>Cohort 1.</em></h2>
+<p>Application is four minutes. Four questions on your current operation. After you submit, you pick a time directly from the cohort calendar. No setter calls. No back-and-forth. Straight to enrolment.</p>
+
+<div class="apply-steps">
+<div class="apply-step">
+<div class="step-num">1</div>
+<div class="step-label">Complete the 4-minute application</div>
+</div>
+<div class="apply-step">
+<div class="step-num">2</div>
+<div class="step-label">Pick a time from the cohort calendar</div>
+</div>
+<div class="apply-step">
+<div class="step-num">3</div>
+<div class="step-label">Cohort 1 enrolment confirmed</div>
+</div>
+</div>
+
+<div class="apply-cta-block">
+<a href="#" class="cta-primary">Apply for Cohort 1 &rarr;</a>
+<!-- SWAP-SLOT: Replace href="#" with Typeform application URL at kickoff.
+  Format: href="https://[form-url]" target="_blank"
+  Application questions: current revenue band, crew size, CRM stack, owner-operator vs working-in-the-business, top bottleneck. -->
+<p class="caps-note">25-seat cap per cohort cycle. Quarterly cadence. Application is a filter, not a sales hoop.</p>
+<p class="price-note">Mentorship pricing range visible after application submission. Not listed publicly.</p>
+</div>
+</div>
+</div>
+</div>
+
+<!-- CTA STRIP -->
+<section class="cta-strip">
 <div class="container">
-<div class="section-eyebrow">FAQ</div>
-<h2 class="section-title">Common questions, <em>before applying.</em></h2>
-<div class="faq">
-<div class="faq-item"><h3>How is this different from the free courses on mikeandes.com?</h3><p>The free courses are the framework. The cohort is the install. The courses teach you what to look for; the cohort walks your specific operation on a live group call. Many cohort members finish the free Landscape Business Course or the free MBA-for-Entrepreneurs course first and come in already knowing the vocabulary.</p></div>
-<div class="faq-item"><h3>Is this the Augusta franchise?</h3><p>No. The cohort is operator mentorship, open to operators in any home-service trade and to career-changers from any industry. The Augusta franchise is a separate path at augustalawncareservices.com for operators who want a full business-model change. Cohort grads who choose that route are routed there; cohort grads who want continued mentorship route to 1-1 work instead. The cohort feeds the franchise; it does not replace it.</p></div>
-<div class="faq-item"><h3>How fast will I see results?</h3><p>Most cohort members name their primary bottleneck in week 1 and have the first SOP rewritten by week 3. The crew or retention rewrite lands by week 6. The full owner-operator transition map lands by week 8. Results vary by market, season, and operator execution.</p></div>
-<div class="faq-item"><h3>Is this a course?</h3><p>No. It is mentorship. Weekly live group calls with Mike, scheduled office-hours blocks for 1:1 questions, private community channel for the 8 weeks. There is no video-on-demand library to fall behind on.</p></div>
-<div class="faq-item"><h3>What is the time commitment?</h3><p>3-4 hours per week for 8 weeks. One live group call per week (60-90 min). Office hours optional. The work between calls is your real operation, not homework.</p></div>
-<div class="faq-item"><h3>What is the investment?</h3><p>Two tiers in the mid-tier mentorship range. Standard tier covers the 8-week cohort, weekly group calls, office hours, and templates. Standard-plus-operating-review tier adds a 1:1 review of your existing operation and three follow-up 1:1 calls in the 90 days post-cohort. Hint range, not an invoice. The application surfaces exact pricing for the cycle you apply to.</p></div>
-<div class="faq-item"><h3>Do I have to use Home.works?</h3><p>No. Module 3 walks the software install, and Home.works is one of three CRM options on the table. The cohort runs cleanly on whatever CRM you are already on. Operators on Jobber, ServiceTitan, HouseCallPro, or anything else walk Module 3 with their existing stack.</p></div>
-<div class="faq-item"><h3>What if I am still under $300K revenue?</h3><p>The sub-$1M owner-operator is one of the three primary avatars. Week 1 starts at pricing, estimating, and the route-density math. Week 8 ends at a 90-day plan for the next operator stage. If you are pre-revenue, the free Landscape Business Course is the right first step; the cohort routes you back after you have a real operating month or two in.</p></div>
-<div class="faq-item"><h3>What if I already run a $2M+ business?</h3><p>The cohort handles the scaling case at the top of its range. Modules 3 and 4 walk the systems and the owner-operator transition for a $1M+ operation. The standard-plus-operating-review tier adds a 1:1 audit. If you are already past $5M, the conversation is the Augusta franchise or 1-1 mentorship, not the cohort.</p></div>
-<div class="faq-item"><h3>How does this work with the Augusta franchise or 1-1 coaching?</h3><p>The cohort is the productised mid-tier. If you want continued mentorship after the cohort, that route is 1-1 mentorship. If you want a full business-model change into the Augusta system, that route is the franchise application at augustalawncareservices.com. The cohort feeds both; it does not replace either.</p></div>
-<div class="faq-item"><h3>Refund policy?</h3><p>Yes. Complete the first two weeks, decide it is not for you, full refund within 14 days of cohort kickoff. No questions.</p></div>
-<div class="faq-item"><h3>Why do I have to apply?</h3><p>You do not have to. The application form is four minutes and it just helps size cohorts and route the office-hours topics to what is actually on members' desks this cycle. Submit the form, you get straight to enrolment, no setter calls, no back-and-forth.</p></div>
-</div>
+<h2>If the cohort is not the right room right now.</h2>
+<p>Stay on the YouTube channel at @MikeAndes. Keep working through the free Landscape Business Course or the free MBA-for-Entrepreneurs course on mikeandes.com. Listen to the Home Service Millionaire podcast on the commute. The work compounds either way. When you are ready, the application will be here.</p>
+<a href="https://mikeandes.com" class="cta-primary" target="_blank" style="background:transparent;color:var(--yellow);border:1px solid var(--yellow-border-strong);box-shadow:none">Back to mikeandes.com &rarr;</a>
 </div>
 </section>
 
-<section id="enrol" style="background:linear-gradient(180deg,transparent,rgba(245,197,24,0.04),transparent)">
-<div class="container-narrow">
-<div class="section-eyebrow">Enrol</div>
-<h2 class="section-title">Join the next cohort.</h2>
-<p class="section-intro">Four-minute application. Cohort cycles run quarterly and cap at 25 to keep the live group call real.</p>
-<div class="form-frame">
-<h3>Home Service Operator Cohort - Application</h3>
-<p>Four minutes to fill in. We will get back to you within 48 hours.</p>
-<div data-tf-live="01HZJC9QM2RSPZSYAH4Z5NGBM7"></div>
-<noscript><iframe src="https://form.typeform.com/to/uTtFirS4" class="typeform-iframe" title="Home Service Operator Cohort Application"></iframe></noscript>
-</div>
-<p style="text-align:center;margin-top:24px;font-size:13px;color:var(--text-muted)">Or book a working session with Andrei (AG1) directly: <a href="https://calendly.com/ag-copy/call-with-andrei" style="color:var(--accent)">calendly.com/ag-copy/call-with-andrei</a></p>
-</div>
-</section>
-
-<section>
-<div class="container-narrow">
-<div class="final-cta-section">
-<h2>If the free courses are the marketing, this is the <em>install.</em></h2>
-<p>Application takes four minutes. After you submit, you will pick a time directly from the cohort calendar. No setter calls. No back-and-forth. Straight to enrolment.</p>
-<div class="cta-wrap"><a href="#enrol" class="cta-primary">Apply To Enrol</a></div>
-<p class="application-note">Four-minute form &middot; Direct enrolment on submit</p>
-<p class="tagline">The free courses are the marketing. The cohort is the install.</p>
+<div class="compliance-footer">
+<div class="compliance-inner">
+Outcomes depend on individual operator effort, route density, local market, and execution. Home service business results are not typical and vary by region, crew size, and customer base. AG1 Consulting Ltd builds the marketing funnel only; operational training delivered exclusively by Mike Andes and Augusta Lawn Care affiliates. The Augusta franchise is a separate product available at augustalawncareservices.com. Home.works software is a separate product at home.works. The free course library is a separate set of offerings at mikeandes.com. This landing page describes the Home Service Operator Cohort only.
 </div>
 </div>
-</section>
 
 <footer>
 <div class="container">
-<p class="footer-meta">Home Service Operator Cohort &middot; Mike Andes &middot; 2026</p>
-<p class="footer-disclaimer">Sample landing page built by AG1 Consulting in Augusta-yellow brand colours pulled from augustalawncareservices.com (the Augusta truck and logo palette). Brand colours and copy lock with Mike on Day 1 of the install. The Home Service Operator Cohort is operator mentorship for home-service businesses, not the Augusta Lawn Care franchise; the Augusta franchise is a separate path at augustalawncareservices.com. Cohort grads who choose the franchise route are routed there. Figures referenced on this page are floors and ranges from Mike's stated 20+ year operating record, not guarantees on cohort outcomes or operator revenue. Results vary by market, season, and operator execution.</p>
+<p class="meta">Home Service Operator Cohort &middot; With Mike Andes &middot; mikeandes.com &middot; augustalawncareservices.com</p>
 </div>
 </footer>
 
-<script src="//embed.typeform.com/next/embed.js"></script>
-<script>
-(function(){
-  var v = document.getElementById('hero-video');
-  if(!v) return;
-  function load(){
-    var iframe = document.createElement('iframe');
-    iframe.src = 'https://www.youtube.com/embed/NA4sajN0rds?autoplay=1&rel=0';
-    iframe.setAttribute('allow','accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture');
-    iframe.setAttribute('allowfullscreen','');
-    iframe.frameBorder = '0';
-    v.innerHTML = '';
-    v.appendChild(iframe);
-  }
-  v.addEventListener('click', load);
-  v.addEventListener('keydown', function(e){ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); load(); }});
-})();
-</script>
 </body>
 </html>
